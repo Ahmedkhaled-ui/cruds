@@ -1,0 +1,94 @@
+::selection {
+    background-color: #fec260; 
+    color: white; 
+}
+
+
+
+.alert-pop,
+
+table {
+  background-color: #fff;
+}
+body {
+  background-color: #f7ecde;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alert-pop {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.f-fa {
+  font-family: Pacifico;
+}
+h1 {
+  font-family: sans-serif;
+}
+.h1-bg::after {
+  content: "";
+  background-color: #fec260;
+  width: 13rem;
+  height: 1rem;
+  position: absolute;
+  top: 30px;
+  left: 1px;
+  z-index: -1;
+}
+h2 {
+  color: rgba(0, 255, 255, 0);
+  background-image: linear-gradient(to right, #49a65b, #b1ac49);
+  background-clip: text;
+}
+label {
+  color: #434242;
+}
+.submet {
+  background-color: #d1512d !important;
+}
+.submet:hover {
+  background-color: #ba4727 !important;
+}
+.line {
+  border: 1px dashed #000;
+}
+table {
+  width: 58rem !important;
+}
+@media (max-width: 576px) {
+  .row .col-ss {
+    width: 20%;
+    display: flex;
+  }
+  .width {
+    font-size: 15px;
+  }
+  .h1-bg::after {
+    width: 10rem;
+    top: 20px;
+  }
+}
+.btn-success {
+  background-color: #55ac83 !important;
+  border: none !important;
+}
+@font-face {
+  font-family: Pacifico;
+  src: url(../fonts/Pacifico-Regular.ttf);
+}

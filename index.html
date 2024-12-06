@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDS pure"js"</title>
+    <link rel="stylesheet" href="icon/all.min.css" />
+    <link rel="stylesheet" href="bt/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div
+        class="container test d-flex justify-content-center align-items-center">
+        <h1 class="f-fa position-relative h1-bg mt-5 mb-5">Bookmarker</h1>
+      </div>
+      <div class="line container"></div>
+    </header>
+    <main>
+      <article class="text-center">
+        <h2 class="mt-5">
+          <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+      </article>
+
+      <div class="container">
+        <div>
+          <label class="mt-5 ms-2 fs-5 mb-2" for="siteName"
+            ><i class="fa-solid fa-book fs-6 me-2"></i> site nime</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="siteName"
+            placeholder="Bookmark name" />
+          <div class="alert alert-danger d-none p-0 mt-1">
+            <span class="fw-bolder ms-2">example:- </span> <br />
+            <span class="fw-lighter ms-2">Ahmedkhaled</span>
+          </div>
+        </div>
+        <div>
+          <label class="mt-3 ms-2 fs-5 mb-2" for="website">
+            <i class="fa-solid fa-paperclip fs-6 me-2"></i>website URL</label
+          >
+
+          <input
+            type="text"
+            class="form-control"
+            id="website"
+            placeholder="website URL" />
+          <div class="alert alert-danger d-none p-0 mt-1">
+            <span class="fw-bolder ms-2">example:- </span> <br />
+            <span class="fw-lighter ms-2">http://example.com </span>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button class="btn submet btn-danger mt-4 px-5 py-2 mb-5">
+            Submit
+          </button>
+          <button class="btn d-none btn-warning mt-4 px-5 py-2 mb-5">
+            Edit
+          </button>
+        </div>
+        <div class="line"></div>
+      </div>
+      <div class="container mt-3 pb-5">
+        <div class="row bg-light pt-3 ">
+          <div class="col-lg col-ss col-md col-sm text-center">
+            <h1 class="h6 fw-bolder">index</h1>
+          </div>
+          <div class="col-lg col-ss col-md col-sm text-center">
+            <h1 class="h6 fw-bolder">website</h1>
+          </div>
+          <div class="col-lg col-ss col-md col-sm text-center">
+            <h1 class="h6 fw-bolder ps-2">Visit</h1>
+          </div>
+          <div class="col-lg col-ss col-md col-sm text-center">
+            <h1 class="h6 fw-bolder">Delete</h1>
+          </div>
+          <div class="col-lg col-ss col-md-3 col-sm text-center">
+            <h1 class="h6 fw-bolder ms-3">Edit</h1>
+          </div>
+        </div>
+
+        <div
+          id="display"
+          class="row bg-light border-top row-gap-2  align-items-baseline"></div>
+      </div>
+      <div id="visitSite" class="visit"></div>
+    </main>
+    <div class="popup d-none">
+      <div class="alert-pop position-relative text-center flex-column">
+        <i id="close" class="fa-regular fs-6 fa-circle-xmark"></i>
+        <i class="fa-regular fs-1 text-danger fa-circle-xmark"></i>
+        <h1 class="mt-3 fw-bold">wrong</h1>
+
+        <h6 class="fw-bolder mb-4">
+          Site Name or Url is not valid, Please follow the rules below :
+        </h6>
+        <p class="ms-2">
+          <i class="fa-solid fa-arrow-right me-2 text-danger"></i>Site name must
+          contain at least 3 characters
+        </p>
+        <p class="me-5 pe-5">
+          <i class="fa-solid fa-arrow-right me-2 text-danger "></i>Site URL must
+          be a valid one
+        </p>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
